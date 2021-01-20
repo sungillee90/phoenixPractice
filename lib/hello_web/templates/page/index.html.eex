@@ -3,6 +3,13 @@
   <p>Peace of mind from prototype to production</p>
 </section>
 
+<div class='col-lg-6'>
+  <div id='messages'>
+
+  </div>
+  <input id='chat-input' type='text'> </input>
+</div>
+
 <section class="row">
   <article class="column">
     <h2>Resources</h2>

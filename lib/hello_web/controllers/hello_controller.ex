@@ -3,6 +3,9 @@ defmodule HelloWeb.HelloController do
 
   def index(conn, _params) do
     conn
+#    This converts website to text language
+#    |> put_resp_content_type("text/plain")
+    |> assign(:var, "I am a string")
     |> put_flash(:info, "Welcome BACK")
 #    |> put_flash(:error, "Welcome BACK") TURNS the message "red color" so it looks like an error
     |> render("index.html")
