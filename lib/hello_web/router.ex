@@ -19,6 +19,10 @@ defmodule HelloWeb.Router do
     get "/", PageController, :index
 
     get "/hello", HelloController, :index
+    get "/hello/:messenger", HelloController, :show
+
+#    CRUD (go to terminal mix phx.routes showed CRUD built in)
+    resources "/users", UserController
 
   end
 
